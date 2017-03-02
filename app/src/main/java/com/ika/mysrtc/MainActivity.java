@@ -15,6 +15,12 @@ import java.io.IOException;
 
 public class MainActivity extends Activity {
 
+    public void ShowRecScr(View view) {
+        
+        Intent intent = new Intent(this, Record.class);
+        startActivity(intent);
+    }
+
 
     private MediaRecorder myRecorder;
     private String outputFile = null;
