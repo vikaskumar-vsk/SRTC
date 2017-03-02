@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/myText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recording..."
+            android:textSize="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <ImageView
+            android:id="@+id/myMicIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@android:mipmap/sym_def_app_icon"
+            android:layout_alignBottom="@+id/myText1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"/>
+
+
+        <Button
+            android:id="@+id/myStopRecBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/myPlayBtn"
+            android:text="stop recording"/>
+
+        <Button
+            android:id="@+id/myPlayBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:layout_above="@+id/myStopPlayBtnBtn"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/myStopPlayBtnBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="stop playing"
+            android:enabled="false"/>
+
+
+</RelativeLayout>
